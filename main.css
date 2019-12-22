@@ -1,0 +1,16 @@
+body {
+	overflow-x:hidden;
+}
+#carousel {
+    margin: 20px;
+}
+
+.container#header {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container#about_me {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
