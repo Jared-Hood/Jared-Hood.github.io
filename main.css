@@ -2,8 +2,13 @@ body {
 	overflow-x:hidden;
 }
 #carousel {
-    margin: 20px;
+    margin: 50px;
 }
+
+.carousel-inner > .carousel-item > img {
+   widows: 100%;
+   max-height: fit-content;
+  }
 
 .container#header {
     font-family: 'Courier New', Courier, monospace;
@@ -13,4 +18,32 @@ body {
 .container#about_me {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    padding-top: 2vh;
+}
+
+.container#resume_header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 2vh;
+}
+
+.container#resume {
+    padding-top: 2vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    height: auto;
+}
+
+img#resume_pic {
+    border: 3px solid #010101;
+}
+  
+  .zoom:hover {
+    transform: scale(1.5); 
+  }
+
+.container#contact {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
