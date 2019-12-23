@@ -1,8 +1,19 @@
 body {
 	overflow-x:hidden;
 }
+
+div#name_desc h2{
+    font-size: 3vw;
+}
+
 #carousel {
     margin: 50px;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 .carousel-inner > .carousel-item > img {
