@@ -7,6 +7,11 @@ body {
     margin-top: 3vh;
 }
 
+.head_container {
+    height: 100%;
+    width: 100%;
+}
+
 div#name h1{
     font-size: 7vw;
     font-weight: 1;
@@ -100,3 +105,16 @@ footer{
 }
 
 /* Media styles for different screen sizes*/
+
+/*Computer Full Screen*/
+@media (min-width: 680px){
+    .container{
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+
+    #carousel{
+        margin-left: 30vw;
+        margin-right: 30vw;
+    }
+}
