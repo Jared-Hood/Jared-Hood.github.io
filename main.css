@@ -1,5 +1,6 @@
 body {
-	overflow-x:hidden;
+    overflow-x:hidden;
+    background-color: #FFFF00;
 }
 .container#header {
     font-family: 'Courier New', Courier, monospace;
