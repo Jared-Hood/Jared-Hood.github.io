@@ -13,6 +13,13 @@ body {
     width: 100%;
 }
 
+.carousel-item
+{
+    object-fit: cover;
+    height: 260px;
+    width: 350px;
+}
+
 div#name h1{
     font-size: 7vw;
     font-weight: 1;
