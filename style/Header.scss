@@ -1,0 +1,37 @@
+/** @define Header */
+
+.Header
+{
+    &-navList
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+        @include mobile
+        {
+            background: red;
+        }
+    }
+
+    &-navItem
+    {
+        padding: 0 32px;
+    }
+
+    &-link
+    {
+        text-decoration: none;
+
+        &:visited
+        {
+            color: black;
+        }
+
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+}

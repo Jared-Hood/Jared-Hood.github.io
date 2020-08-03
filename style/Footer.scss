@@ -1,0 +1,17 @@
+.Footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-link
+    {
+        padding: 0 64px;
+    }
+
+    &-icon
+    {
+        height: 64px;
+        width: 64px;
+    }
+}

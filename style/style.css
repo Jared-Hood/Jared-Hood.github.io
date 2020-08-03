@@ -1,0 +1,74 @@
+.j-container {
+  padding: 32px 50px;
+}
+
+body {
+  font-family: "Gothic A1", serif;
+}
+
+/** @define Header */
+.Header-navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+@media (max-width: 599px) {
+  .Header-navList {
+    background: red;
+  }
+}
+.Header-navItem {
+  padding: 0 32px;
+}
+.Header-link {
+  text-decoration: none;
+}
+.Header-link:visited {
+  color: black;
+}
+.Header-link:hover {
+  text-decoration: underline;
+}
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Resume {
+  display: flex;
+  justify-content: center;
+}
+.Resume-img {
+  width: 400px;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer-link {
+  padding: 0 64px;
+}
+.Footer-icon {
+  height: 64px;
+  width: 64px;
+}
+
+/*# sourceMappingURL=style.css.map */
