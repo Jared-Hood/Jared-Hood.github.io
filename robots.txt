@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://jaredhood.me/sitemap.txt
