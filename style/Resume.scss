@@ -6,11 +6,22 @@
     align-items: center;
     padding-bottom: 64px;
 
+    &-link
+    {
+        display: flex;
+        justify-content: center;
+    }
+
     &-img
     {
         border: 2px solid $color-white;
         box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.15);
         transition: box-shadow 0.5s, transform 0.5s;
+
+        @include mobile
+        {
+            width: 80%;
+        }
 
         &:hover
         {

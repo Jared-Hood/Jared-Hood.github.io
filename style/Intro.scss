@@ -2,6 +2,11 @@
 {
     padding: 164px 0 32px;
 
+    @include mobile
+    {
+        padding-top: 64px; 
+    }
+
     &-title
     {
         @include Heading--title;
@@ -9,10 +14,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     &-name
     {
         padding-bottom: 32px;
+    }
+
+    &-description
+    {
+        @include mobile
+        {
+            text-align: center;
+        }
     }
 }

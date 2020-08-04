@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 64px;
+    padding: $mobile-padding;
 
     &-title
     {
@@ -22,6 +23,7 @@
         @include mobile
         {
             width: 80%;
+            text-align: left;
         }
     }
 }
