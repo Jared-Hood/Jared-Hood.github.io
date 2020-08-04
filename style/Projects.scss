@@ -4,12 +4,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    box-sizing: border-box;
     padding-bottom: 64px;
-    padding: $mobile-padding;
+    padding: 0 $mobile-padding;
+    width: 100%;
 
     @include desktop
     {
-        padding: $desktop-padding;
+        padding: 0 $desktop-padding;
+        padding-bottom: $desktop-separation;
     }
 
     &-title
@@ -27,6 +31,25 @@
         @include mobile
         {
             flex-direction: column;
+        }
+
+        @media (max-width: 799px) and (min-width: 600px){
+            flex-direction: column;
+        }
+    }
+
+    &-link
+    {
+        text-decoration: none;
+        margin: 0 32px;
+
+        @include mobile
+        {
+            margin: 8px 0;
+        }
+
+        @media (max-width: 799px) and (min-width: 600px){
+            margin: 16px 0;
         }
     }
 }

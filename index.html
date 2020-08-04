@@ -15,6 +15,7 @@
     </head>
     <header class="Header">
         <div class="Header-navBar">
+            <img class="Header-icon js-open-mobile-menu" src="images/blue-menu.png" alt="open mobile menu">
             <ul class="Header-navList">
                 <li class="Header-navItem">
                     <a class="Header-link" href="#About">About</a>
@@ -27,6 +28,22 @@
                 </li>
                 <li class="Header-navItem">
                     <a class="Header-link" href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Header-mobile js-mobile-menu">
+            <ul class="Header-mobileList">
+                <li class="Header-navItem">
+                    <a class="Header-mobileLink" href="#About">About</a>
+                </li>
+                <li class="Header-navItem">
+                    <a class="Header-mobileLink" href="#Projects">Projects</a>
+                </li>
+                <li class="Header-navItem">
+                    <a class="Header-mobileLink" href="#Resume">Resume</a>
+                </li>
+                <li class="Header-navItem">
+                    <a class="Header-mobileLink" href="#Contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -53,33 +70,37 @@
             <h2 class="Projects-title">Projects</h2>
             <div class="Projects-container">
                 <div class="Projects-row">
-                    <div class="Project">
-                        <h3 class="Project-title">Hiking Path Finder</h3>
-                        <div class="Project-description">
-                            I developed an efficient algorithm to find a path up a mountain using real elevation data.
-                            The algorithm used both heuristics and optimal data structures to achieve it's goal.
+                    <a class="Projects-link" href="https://github.com/Jared-Hood/Brawlhalla-Rank-Data">
+                        <div class="Project">
+                            <h3 class="Project-title">Hiking Path Finder</h3>
+                            <div class="Project-description">
+                                I developed an efficient algorithm to find a path up a mountain using real elevation data.
+                                The algorithm used both heuristics and optimal structures to achieve it's goal.
+                            </div>
+                            <div class="Project-images">
+                                <img class="Project-img" src="images/Logan_Euclidean.png" alt="Path finding project image">
+                            </div>
                         </div>
-                        <div class="Project-images">
-                            <img class="Project-img" src="images/Logan_Euclidean.png" alt="Path finding project image">
+                    </a>
+                    <a class="Projects-link" href="https://github.com/Jared-Hood/Brawlhalla-Rank-Data">
+                        <div class="Project">
+                            <h3 class="Project-title">Brawlhalla Rank Data</h3>
+                            <div class="Project-description">
+                                I wrote a web scraping algorithm to efficiently scrape a rate limited website for the large
+                                online player ranking data on Brawlhalla's online player ranking data.
+                            </div>
+                            <div class="Project-images">
+                                <img class="Project-img" src="images/Brawlhalla.png" alt="Brawlhalla rank project image">
+                            </div>
                         </div>
-                    </div>
-                    <div class="Project">
-                        <h3 class="Project-title">Brawlhalla Rank Data</h3>
-                        <div class="Project-description">
-                            I wrote a web scraping algorithm to efficiently scrape a rate limited website for the large
-                            online player ranking data on Brawlhalla's online ranking data.
-                        </div>
-                        <div class="Project-images">
-                            <img class="Project-img" src="images/Brawlhalla.png" alt="Brawlhalla rank project image">
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="Resume" id="Resume">
             <h2 class="Resume-title">Resume</h2>
             <a class="Resume-link" href="images/Jared-Hood-Resume.pdf" target="_blank">
-                <img class="Resume-img" src="images/Resume.jpg" alt="Responsive image">
+                <img class="Resume-img" src="images/Resume.png" alt="Responsive image">
             </a>
         </div>
     </body>
@@ -98,4 +119,6 @@
             </a>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </html>

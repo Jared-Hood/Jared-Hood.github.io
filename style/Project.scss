@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: center;
     border: 3px solid $color-gold;
-    margin: 0 32px;
     padding: 32px;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.15),
@@ -13,8 +12,10 @@
       ),
       url('../images/watercolor-backgrounds-10.jpg');
     
-    width: calc(100% - 128px);
     transition: box-shadow 0.5s, transform 0.5s;
+    width: calc((100vw / 2) - 128px);
+    height: 476px;
+    box-sizing: border-box;
     
     &:hover
     {
@@ -24,14 +25,21 @@
 
     @include mobile
     {
-        margin: 8px;
         padding: 12px 24px;
-        width: 80%;
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 799px) and (min-width: 600px) {
+        padding: 32px;
+        width: 100%;
     }
 
     &-title
     {
         @include Heading--project;
+
+        text-align: center;
     }
 
     &-description
@@ -40,6 +48,11 @@
 
         text-align: center;
         padding-bottom: 16px;
+
+        @include mobile
+        {
+            text-align: left;
+        }
     }
 
     &-images

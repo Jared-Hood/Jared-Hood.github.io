@@ -6,6 +6,11 @@ body {
   font-family: "Gothic A1", serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/watercolor-backgrounds-19.jpg");
   width: 100%;
+  margin: 0;
+}
+
+.test {
+  height: calc(100vh);
 }
 
 /** @define Header */
@@ -25,7 +30,15 @@ body {
 }
 @media (max-width: 599px) {
   .Header {
-    display: none;
+    height: 64px;
+  }
+}
+@media (max-width: 599px) {
+  .Header-navBar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
   }
 }
 .Header-navList {
@@ -33,6 +46,11 @@ body {
   align-items: center;
   justify-content: center;
   list-style: none;
+}
+@media (max-width: 599px) {
+  .Header-navList {
+    display: none;
+  }
 }
 .Header-navItem {
   padding: 0 64px;
@@ -50,15 +68,55 @@ body {
 .Header-link:hover {
   text-decoration: underline;
 }
-
-.Intro {
-  padding: 8px;
-  padding-top: 64px;
+.Header-icon {
+  height: 32px;
+  width: 32px;
+  color: white;
 }
 @media (min-width: 600px) {
-  .Intro {
-    padding: 164px 32px 32px;
+  .Header-icon {
+    display: none;
   }
+}
+.Header-mobile {
+  display: none;
+}
+.Header-mobile.is-open {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/watercolor-backgrounds-16.jpg");
+  background-size: cover;
+}
+.Header-mobileList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Header-mobileLink {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #f1f0eb;
+  color: #f1f0eb;
+  font-size: 30px;
+}
+.Header-mobileLink:visited {
+  color: #f1f0eb;
+}
+.Header-mobileLink:hover {
+  text-decoration: underline;
+}
+
+.Intro {
+  padding: 16px;
+  height: 100vh;
 }
 .Intro-title {
   font-weight: 600;
@@ -69,6 +127,18 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: absolute;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+@media (min-width: 600px) {
+  .Intro-title {
+    top: 45%;
+    padding: 64px;
+  }
 }
 .Intro-name {
   padding-bottom: 32px;
@@ -83,12 +153,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 64px;
-  padding: 8px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
 }
 @media (min-width: 600px) {
   .About {
-    padding: 64px;
+    padding: 0 64px;
+    padding-bottom: 64px;
   }
 }
 .About-title {
@@ -100,13 +172,15 @@ body {
 .About-description {
   font-weight: 300;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 38px;
   color: #f1f0eb;
   text-align: center;
+  width: 80%;
 }
 @media (max-width: 599px) {
   .About-description {
     text-align: left;
+    width: 100%;
   }
 }
 
@@ -115,12 +189,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
   padding-bottom: 64px;
-  padding: 8px;
+  padding: 0 16px;
+  width: 100%;
 }
 @media (min-width: 600px) {
   .Projects {
-    padding: 64px;
+    padding: 0 64px;
+    padding-bottom: 64px;
   }
 }
 .Projects-title {
@@ -138,6 +215,25 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 799px) and (min-width: 600px) {
+  .Projects-row {
+    flex-direction: column;
+  }
+}
+.Projects-link {
+  text-decoration: none;
+  margin: 0 32px;
+}
+@media (max-width: 599px) {
+  .Projects-link {
+    margin: 8px 0;
+  }
+}
+@media (max-width: 799px) and (min-width: 600px) {
+  .Projects-link {
+    margin: 16px 0;
+  }
+}
 
 .Resume {
   display: flex;
@@ -145,20 +241,29 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 64px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .Resume {
+    padding: 0 64px;
+    padding-bottom: 64px;
+  }
 }
 .Resume-link {
   display: flex;
   justify-content: center;
 }
 .Resume-img {
-  border: 2px solid #f1f0eb;
   box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.15);
   transition: box-shadow 0.5s, transform 0.5s;
+  box-sizing: border-box;
   width: 400px;
 }
 @media (max-width: 599px) {
   .Resume-img {
-    width: 80%;
+    width: 100%;
   }
 }
 .Resume-img:hover {
@@ -215,11 +320,12 @@ body {
   flex-direction: column;
   align-items: center;
   border: 3px solid #D79922;
-  margin: 0 32px;
   padding: 32px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/watercolor-backgrounds-10.jpg");
-  width: calc(100% - 128px);
   transition: box-shadow 0.5s, transform 0.5s;
+  width: calc((100vw / 2) - 128px);
+  height: 476px;
+  box-sizing: border-box;
 }
 .Project:hover {
   box-shadow: 8px 8px 4px rgba(255, 255, 255, 0.2);
@@ -227,23 +333,35 @@ body {
 }
 @media (max-width: 599px) {
   .Project {
-    margin: 8px;
     padding: 12px 24px;
-    width: 80%;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 799px) and (min-width: 600px) {
+  .Project {
+    padding: 32px;
+    width: 100%;
   }
 }
 .Project-title {
   font-weight: 500;
   color: #f1f0eb;
   font-size: 24px;
+  text-align: center;
 }
 .Project-description {
   font-weight: 300;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 38px;
   color: #f1f0eb;
   text-align: center;
   padding-bottom: 16px;
+}
+@media (max-width: 599px) {
+  .Project-description {
+    text-align: left;
+  }
 }
 .Project-images {
   margin-top: auto;
