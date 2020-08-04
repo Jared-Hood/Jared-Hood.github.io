@@ -1,0 +1,46 @@
+.Project
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid $color-gold;
+    margin: 0 32px;
+    padding: 32px;
+    width: 400px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15)
+      ),
+      url('../images/watercolor-backgrounds-10.jpg');
+
+    @include mobile
+    {
+        width: 80%;
+    }
+
+    &-title
+    {
+        @include Heading--project;
+    }
+
+    &-description
+    {
+        @include Text;
+
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    &-images
+    {
+        margin-top: auto;
+    }
+
+    &-img
+    {
+        height: 150px;
+        border: 1px solid black;
+        margin-top: auto;
+    }
+}

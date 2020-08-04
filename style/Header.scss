@@ -2,36 +2,42 @@
 
 .Header
 {
+    background: $color-gold;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: url('../images/watercolor-backgrounds-16.jpg');
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile
+    {
+        display: none;
+    }
+
     &-navList
     {
         display: flex;
         align-items: center;
         justify-content: center;
         list-style: none;
-
-        @include mobile
-        {
-            background: red;
-        }
     }
 
     &-navItem
     {
-        padding: 0 32px;
+        padding: 0 64px;
     }
 
     &-link
     {
-        text-decoration: none;
+        @include Link;
 
-        &:visited
-        {
-            color: black;
-        }
-
-        &:hover
-        {
-            text-decoration: underline;
-        }
+        color: red;
     }
 }

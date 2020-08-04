@@ -1,8 +1,24 @@
 .Footer
 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 64px;
+
+    &-title
+    {
+        @include Heading--section;
+
+        padding-bottom: 16px;
+    }
+
+    &-links
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     &-link
     {
