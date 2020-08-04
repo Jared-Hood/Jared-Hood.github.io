@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1;
-  background: url("../images/background-red.jpg");
+  background: url("../images/background-red.png");
   background-size: cover;
   height: 100px;
   display: flex;
@@ -90,7 +90,7 @@ body {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background: url("../images/background-red.jpg");
+  background: url("../images/background-red.png");
   background-size: cover;
 }
 .Header-mobileList {
