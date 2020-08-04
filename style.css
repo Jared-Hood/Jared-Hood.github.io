@@ -5,11 +5,11 @@
 body {
   font-family: "Gothic A1", serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/watercolor-backgrounds-19.jpg");
+  width: 100%;
 }
 
 /** @define Header */
 .Header {
-  background: #D79922;
   position: fixed;
   top: 0;
   right: 0;
@@ -52,11 +52,12 @@ body {
 }
 
 .Intro {
-  padding: 164px 0 32px;
+  padding: 8px;
+  padding-top: 64px;
 }
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .Intro {
-    padding-top: 64px;
+    padding: 164px 32px 32px;
   }
 }
 .Intro-title {
@@ -85,6 +86,11 @@ body {
   padding-bottom: 64px;
   padding: 8px;
 }
+@media (min-width: 600px) {
+  .About {
+    padding: 64px;
+  }
+}
 .About-title {
   font-weight: 700;
   color: #f1f0eb;
@@ -96,12 +102,10 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: #f1f0eb;
-  width: 800px;
   text-align: center;
 }
 @media (max-width: 599px) {
   .About-description {
-    width: 80%;
     text-align: left;
   }
 }
@@ -113,6 +117,11 @@ body {
   flex-direction: column;
   padding-bottom: 64px;
   padding: 8px;
+}
+@media (min-width: 600px) {
+  .Projects {
+    padding: 64px;
+  }
 }
 .Projects-title {
   font-weight: 700;
@@ -208,14 +217,14 @@ body {
   border: 3px solid #D79922;
   margin: 0 32px;
   padding: 32px;
-  width: 400px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/watercolor-backgrounds-10.jpg");
+  width: calc(100% - 128px);
 }
 @media (max-width: 599px) {
   .Project {
-    width: 80%;
     margin: 8px;
     padding: 12px 24px;
+    width: 80%;
   }
 }
 .Project-title {

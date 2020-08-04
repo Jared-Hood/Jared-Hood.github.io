@@ -7,6 +7,11 @@
     padding-bottom: 64px;
     padding: $mobile-padding;
 
+    @include desktop
+    {
+        padding: $desktop-padding;
+    }
+
     &-title
     {
         @include Heading--section;

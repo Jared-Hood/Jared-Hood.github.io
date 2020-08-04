@@ -6,6 +6,11 @@
     padding-bottom: 64px;
     padding: $mobile-padding;
 
+    @include desktop
+    {
+        padding: $desktop-padding;
+    }
+
     &-title
     {
         @include Heading--section;
@@ -17,12 +22,10 @@
     {
         @include Text;
 
-        width: 800px;
         text-align: center;
 
         @include mobile
         {
-            width: 80%;
             text-align: left;
         }
     }

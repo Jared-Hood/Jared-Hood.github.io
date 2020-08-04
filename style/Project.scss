@@ -7,18 +7,19 @@
     border: 3px solid $color-gold;
     margin: 0 32px;
     padding: 32px;
-    width: 400px;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.15),
         rgba(0, 0, 0, 0.15)
       ),
       url('../images/watercolor-backgrounds-10.jpg');
+    
+      width: calc(100% - 128px);
 
     @include mobile
     {
-        width: 80%;
         margin: 8px;
         padding: 12px 24px;
+        width: 80%;
     }
 
     &-title
