@@ -1,6 +1,18 @@
 .Intro
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 164px 0 32px;
+
+    &-title
+    {
+        @include Heading--title;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-name
+    {
+        padding-bottom: 32px;
+    }
 }

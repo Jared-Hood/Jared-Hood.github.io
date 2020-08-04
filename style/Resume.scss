@@ -2,9 +2,29 @@
 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 64px;
 
     &-img
     {
-        width: 400px
+        border: 2px solid $color-white;
+        box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.15);
+        transition: box-shadow 0.5s, transform 0.5s;
+
+        &:hover
+        {
+            box-shadow: 8px 8px 2px rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        width: 400px;
+    }
+
+    &-title
+    {
+        @include Heading--section;
+
+        padding-bottom: 16px;
     }
 }
