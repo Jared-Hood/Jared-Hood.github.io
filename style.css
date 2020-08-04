@@ -4,7 +4,7 @@
 
 body {
   font-family: "Gothic A1", serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/watercolor-backgrounds-19.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/background-blue.jpg");
   width: 100%;
   margin: 0;
 }
@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1;
-  background: url("../images/watercolor-backgrounds-16.jpg");
+  background: url("../images/background-red.jpg");
   background-size: cover;
   height: 100px;
   display: flex;
@@ -90,7 +90,7 @@ body {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background: url("../images/watercolor-backgrounds-16.jpg");
+  background: url("../images/background-red.jpg");
   background-size: cover;
 }
 .Header-mobileList {
@@ -136,7 +136,7 @@ body {
 }
 @media (min-width: 600px) {
   .Intro-title {
-    top: 45%;
+    top: 40%;
     padding: 64px;
   }
 }
@@ -321,7 +321,7 @@ body {
   align-items: center;
   border: 3px solid #D79922;
   padding: 32px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/watercolor-backgrounds-10.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/project-min.jpg");
   transition: box-shadow 0.5s, transform 0.5s;
   width: calc((100vw / 2) - 128px);
   height: 476px;
