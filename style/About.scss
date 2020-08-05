@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     box-sizing: border-box;
     padding: 0 $mobile-padding;
@@ -12,6 +13,7 @@
     {
         padding: 0 $desktop-padding;
         padding-bottom: $desktop-separation;
+        height: calc(100vh);
     }
 
     &-title
@@ -25,13 +27,13 @@
     {
         @include Text;
 
-        text-align: center;
-        width: 80%;
+        text-align: left;
+        width: 100%;
 
-        @include mobile
+        @include desktop
         {
-            text-align: left;
-            width: 100%;
+            text-align: center;
+            width: 80%;
         }
     }
 }

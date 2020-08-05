@@ -13,6 +13,35 @@ body {
   height: calc(100vh);
 }
 
+.ScrollTop {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  bottom: 20;
+}
+@media (min-width: 600px) {
+  .ScrollTop {
+    bottom: 40;
+  }
+}
+.ScrollTop-icon {
+  background: #f1f0eb;
+  border-radius: 50%;
+  transition: transform 1s, opacity 1s;
+  cursor: pointer;
+  margin-right: 20px;
+}
+@media (min-width: 600px) {
+  .ScrollTop-icon {
+    margin-right: 40px;
+  }
+}
+.ScrollTop-icon:hover {
+  transform: translate(3px, -3px);
+  opacity: 0.5;
+}
+
 /** @define Header */
 .Header {
   position: fixed;
@@ -56,18 +85,31 @@ body {
 .Header-navItem {
   padding: 0 64px;
 }
-.Header-link {
+.Header-button {
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   color: #f1f0eb;
   color: #f1f0eb;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 1s;
 }
-.Header-link:visited {
+.Header-button:visited {
   color: #f1f0eb;
 }
-.Header-link:hover {
+.Header-button:hover {
   text-decoration: underline;
+}
+.Header-button:hover {
+  color: black;
+}
+.Header-button:focus {
+  outline: none;
 }
 .Header-icon {
   height: 32px;
@@ -119,6 +161,12 @@ body {
   padding: 16px;
   height: 100vh;
 }
+@media (max-width: 599px) {
+  .Intro {
+    background: url("../images/watercolor-backgrounds-11.jpg");
+    background-size: cover;
+  }
+}
 .Intro-title {
   font-weight: 600;
   font-size: 38px;
@@ -154,6 +202,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   padding: 0 16px;
   width: 100%;
@@ -162,6 +211,7 @@ body {
   .About {
     padding: 0 64px;
     padding-bottom: 64px;
+    height: calc(100vh);
   }
 }
 .About-title {
@@ -175,13 +225,19 @@ body {
   font-size: 20px;
   line-height: 38px;
   color: #f1f0eb;
-  text-align: center;
-  width: 80%;
+  text-align: left;
+  width: 100%;
 }
-@media (max-width: 599px) {
+@media (min-width: 600px) {
   .About-description {
-    text-align: left;
-    width: 100%;
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 600px) {
+  .About-description {
+    text-align: center;
+    width: 80%;
   }
 }
 
@@ -197,8 +253,8 @@ body {
 }
 @media (min-width: 600px) {
   .Projects {
-    padding: 0 64px;
-    padding-bottom: 64px;
+    padding: 100px 64px;
+    height: calc(max(auto, 100vh));
   }
 }
 .Projects-title {
@@ -248,8 +304,8 @@ body {
 }
 @media (min-width: 600px) {
   .Resume {
-    padding: 0 64px;
-    padding-bottom: 64px;
+    padding: 64px 64px;
+    height: 100vh;
   }
 }
 .Resume-link {
@@ -373,6 +429,7 @@ body {
   height: 150px;
   border: 1px solid black;
   margin-top: auto;
+  margin-bottom: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

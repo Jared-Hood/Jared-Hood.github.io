@@ -19,3 +19,37 @@ body
 {
     height: calc(100vh);
 }
+
+.ScrollTop
+{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    bottom: 20;
+
+    @include desktop
+    {
+        bottom: 40;
+    }
+
+    &-icon
+    {
+        background: $color-white;
+        border-radius: 50%;
+        transition: transform 1s, opacity 1s;
+        cursor: pointer;
+        margin-right: 20px;
+        
+        @include desktop
+        {
+            margin-right: 40px;
+        }
+
+        &:hover
+        {
+            transform: translate(3px, -3px);
+            opacity: 0.5;
+        }
+    }
+}

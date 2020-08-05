@@ -31,6 +31,20 @@
     font-size: 20px;
     line-height: 38px;
     color: $color-white;
+
+    @include desktop
+    {
+        font-size: 24px;
+        line-height: 48px;
+    }
+}
+
+@mixin Text--project
+{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+    color: $color-white;
 }
 
 @mixin Link 

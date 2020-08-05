@@ -50,11 +50,28 @@
         padding: 0 64px;
     }
 
-    &-link
+    &-button
     {
         @include Link;
 
         color: $color-white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: inline-block;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: color 1s;
+
+        &:hover
+        {
+            color: black;
+        }
+
+        &:focus
+        {
+            outline: none;
+        }
     }
 
     &-icon

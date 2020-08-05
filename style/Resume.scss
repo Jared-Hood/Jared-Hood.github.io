@@ -12,8 +12,8 @@
 
     @include desktop
     {
-        padding: 0 $desktop-padding;
-        padding-bottom: $desktop-separation;
+        padding: $desktop-separation $desktop-padding;
+        height: 100vh;
     }
 
     &-link

@@ -3,6 +3,12 @@
     padding: $mobile-padding;
     height: 100vh;
 
+    @include mobile
+    {
+        background: url('../images/watercolor-backgrounds-11.jpg');
+        background-size: cover;
+    }
+
     &-title
     {
         @include Heading--title;
