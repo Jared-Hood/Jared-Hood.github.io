@@ -18,6 +18,7 @@
     @include mobile
     {
         height: $header-mobile;
+        display: none;
     }
 
     &-navBar
