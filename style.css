@@ -18,11 +18,11 @@ body {
   justify-content: flex-end;
   position: fixed;
   width: 100%;
-  bottom: 20;
+  bottom: 20px;
 }
 @media (min-width: 600px) {
   .ScrollTop {
-    bottom: 40;
+    bottom: 40px;
   }
 }
 .ScrollTop-icon {
