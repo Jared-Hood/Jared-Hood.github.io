@@ -362,11 +362,12 @@ body {
   }
 }
 .Footer-link {
-  padding: 0 64px;
+  margin: 0 64px;
+  z-index: 5;
 }
 @media (max-width: 599px) {
   .Footer-link {
-    padding: 16px 0;
+    margin: 16px 0;
   }
 }
 .Footer-icon {

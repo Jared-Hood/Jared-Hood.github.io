@@ -28,11 +28,12 @@
 
     &-link
     {
-        padding: 0 64px;
+        margin: 0 64px;
+        z-index: 5;
 
         @include mobile
         {
-            padding: 16px 0;
+            margin: 16px 0;
         }
     }
 
