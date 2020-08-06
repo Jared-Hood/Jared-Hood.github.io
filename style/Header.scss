@@ -8,7 +8,7 @@
     left: 0;
     width: 100%;
     z-index: 1;
-    background: url('../images/background-red.png');
+    background: url('../images/background-red.jpg');
     background-size: cover;
     height: $header-desktop;
     display: flex;
@@ -101,8 +101,8 @@
         right: 0;
         height: 100vh;
         width: 100vw;
-        background: url('../images/background-red.png');
-        background-size: cover;
+        // background: url('../images/background-red.png');
+        // background-size: cover;
     }
 
     &-mobileList

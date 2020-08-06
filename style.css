@@ -51,7 +51,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1;
-  background: url("../images/background-red.png");
+  background: url("../images/background-red.jpg");
   background-size: cover;
   height: 100px;
   display: flex;
@@ -134,8 +134,6 @@ body {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background: url("../images/background-red.png");
-  background-size: cover;
 }
 .Header-mobileList {
   list-style: none;
@@ -164,8 +162,9 @@ body {
 }
 @media (max-width: 599px) {
   .Intro {
-    background: url("../images/watercolor-backgrounds-11.jpg");
+    background: url("../images/background-intro-mobile.jpg");
     background-size: cover;
+    background-position: right bottom;
   }
 }
 .Intro-title {
@@ -206,6 +205,7 @@ body {
   justify-content: center;
   box-sizing: border-box;
   padding: 0 16px;
+  margin-bottom: 32px;
   width: 100%;
 }
 @media (min-width: 600px) {
@@ -248,7 +248,7 @@ body {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  padding-bottom: 64px;
+  margin-bottom: 32px;
   padding: 0 16px;
   width: 100%;
 }
@@ -301,6 +301,7 @@ body {
   padding-bottom: 64px;
   box-sizing: border-box;
   padding: 0 16px;
+  margin-bottom: 32px;
   width: 100%;
 }
 @media (min-width: 600px) {
@@ -382,7 +383,7 @@ body {
   align-items: center;
   border: 3px solid #D79922;
   padding: 32px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/project-min.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/background-project.jpg");
   transition: box-shadow 0.5s, transform 0.5s;
   width: calc((100vw / 2) - 128px);
   height: 476px;

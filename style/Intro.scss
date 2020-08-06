@@ -5,8 +5,9 @@
 
     @include mobile
     {
-        background: url('../images/watercolor-backgrounds-11.jpg');
+        background: url('../images/background-intro-mobile.jpg');
         background-size: cover;
+        background-position: right bottom;
     }
 
     &-title
