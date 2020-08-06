@@ -22,15 +22,16 @@ body
 
 .ScrollTop
 {
-    display: flex;
+    display: none;
     justify-content: flex-end;
-    position: fixed;
     width: 100%;
     bottom: 20px;
 
     @include desktop
     {
         bottom: 40px;
+        display: flex;
+        position: fixed;
     }
 
     &-icon
