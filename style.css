@@ -190,6 +190,7 @@ body {
 @media (min-width: 600px) {
   .Intro-title {
     padding: 64px;
+    margin-bottom: 0px;
   }
 }
 .Intro-name {
@@ -204,6 +205,7 @@ body {
   display: none;
   height: 400px;
   width: 300px;
+  border: 2px solid white;
 }
 @media (min-width: 600px) {
   .Intro-picture {
