@@ -63,6 +63,8 @@
     &-img
     {
         height: 150px;
+        max-width: 250px;
+        object-fit: cover;
         border: 1px solid black;
         margin-top: auto;
         margin-bottom: 8px;

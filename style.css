@@ -32,6 +32,7 @@ body {
   transition: transform 1s, opacity 1s;
   cursor: pointer;
   margin-right: 20px;
+  opacity: 0.5;
 }
 @media (min-width: 600px) {
   .ScrollTop-icon {
@@ -40,7 +41,7 @@ body {
 }
 .ScrollTop-icon:hover {
   transform: translate(3px, -3px);
-  opacity: 0.5;
+  opacity: 1;
 }
 
 /** @define Header */
@@ -85,6 +86,11 @@ body {
 }
 .Header-navItem {
   padding: 0 64px;
+}
+@media (max-width: 799px) and (min-width: 600px) {
+  .Header-navItem {
+    padding: 0 40px;
+  }
 }
 .Header-button {
   text-decoration: none;
@@ -159,6 +165,10 @@ body {
 .Intro {
   padding: 16px;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 599px) {
   .Intro {
@@ -176,16 +186,9 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: absolute;
-  top: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
 }
 @media (min-width: 600px) {
   .Intro-title {
-    top: 40%;
     padding: 64px;
   }
 }
@@ -195,6 +198,16 @@ body {
 @media (max-width: 599px) {
   .Intro-description {
     text-align: center;
+  }
+}
+.Intro-picture {
+  display: none;
+  height: 400px;
+  width: 300px;
+}
+@media (min-width: 600px) {
+  .Intro-picture {
+    display: block;
   }
 }
 
@@ -267,10 +280,12 @@ body {
 .Projects-row {
   display: flex;
   justify-content: space-between;
+  padding: 32px 0;
 }
 @media (max-width: 599px) {
   .Projects-row {
     flex-direction: column;
+    padding: 0;
   }
 }
 @media (max-width: 799px) and (min-width: 600px) {
@@ -430,6 +445,8 @@ body {
 }
 .Project-img {
   height: 150px;
+  max-width: 250px;
+  object-fit: cover;
   border: 1px solid black;
   margin-top: auto;
   margin-bottom: 8px;

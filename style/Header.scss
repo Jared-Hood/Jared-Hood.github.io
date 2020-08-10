@@ -48,6 +48,10 @@
     &-navItem
     {
         padding: 0 64px;
+
+        @media (max-width: 799px) and (min-width: 600px){
+            padding: 0 40px;
+        }
     }
 
     &-button

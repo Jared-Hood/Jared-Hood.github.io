@@ -41,6 +41,7 @@ body
         transition: transform 1s, opacity 1s;
         cursor: pointer;
         margin-right: 20px;
+        opacity: 0.5;
         
         @include desktop
         {
@@ -50,7 +51,7 @@ body
         &:hover
         {
             transform: translate(3px, -3px);
-            opacity: 0.5;
+            opacity: 1;
         }
     }
 }
